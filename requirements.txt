@@ -1,0 +1,14 @@
+# Local inference + reproducing evaluation artifacts.
+# (Fine-tuning itself runs on Colab via takemeter_finetune.ipynb.)
+numpy
+pandas
+scikit-learn
+matplotlib
+
+# Deployed interface (classify.py / app.py)
+transformers>=4.44
+torch
+gradio>=4.0
+
+# Baseline (only needed if you run the Groq baseline locally)
+groq

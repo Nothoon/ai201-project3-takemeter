@@ -1,0 +1,557 @@
+{
+  "labels": [
+    "critique",
+    "hot_take",
+    "stan"
+  ],
+  "split": {
+    "train": 149,
+    "val": 32,
+    "test": 33
+  },
+  "seed": 42,
+  "fine_tuned": {
+    "accuracy": 0.818,
+    "macro_f1": 0.82,
+    "per_class": {
+      "critique": {
+        "precision": 0.818,
+        "recall": 0.818,
+        "f1": 0.818,
+        "support": 11
+      },
+      "hot_take": {
+        "precision": 1.0,
+        "recall": 0.727,
+        "f1": 0.842,
+        "support": 11
+      },
+      "stan": {
+        "precision": 0.714,
+        "recall": 0.909,
+        "f1": 0.8,
+        "support": 11
+      }
+    }
+  },
+  "baseline": {
+    "accuracy": 0.636,
+    "macro_f1": 0.591,
+    "per_class": {
+      "critique": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.667,
+        "support": 11
+      },
+      "hot_take": {
+        "precision": 0.889,
+        "recall": 0.727,
+        "f1": 0.8,
+        "support": 11
+      },
+      "stan": {
+        "precision": 1.0,
+        "recall": 0.182,
+        "f1": 0.308,
+        "support": 11
+      }
+    }
+  },
+  "fine_tuned_confusion_matrix": {
+    "labels": [
+      "critique",
+      "hot_take",
+      "stan"
+    ],
+    "matrix": [
+      [
+        9,
+        0,
+        2
+      ],
+      [
+        1,
+        8,
+        2
+      ],
+      [
+        1,
+        0,
+        10
+      ]
+    ],
+    "note": "rows = true label, columns = predicted label"
+  },
+  "test_predictions": [
+    {
+      "text": "Kendrick vs Drake wasn't even close, Drake lost the second the first track dropped.",
+      "true": "hot_take",
+      "fine_tuned": "stan",
+      "baseline": "critique"
+    },
+    {
+      "text": "The bridge strips back to just piano and vocal and that vulnerability in the arrangement is why the emotional turn in the lyric actually registers.",
+      "true": "critique",
+      "fine_tuned": "critique",
+      "baseline": "critique"
+    },
+    {
+      "text": "DOOM is the most influential underground rapper ever and mainstream heads will never get it.",
+      "true": "hot_take",
+      "fine_tuned": "hot_take",
+      "baseline": "hot_take"
+    },
+    {
+      "text": "Future is more influential than Jay-Z and it's not even a debate at this point.",
+      "true": "hot_take",
+      "fine_tuned": "hot_take",
+      "baseline": "hot_take"
+    },
+    {
+      "text": "Andre 3000 is the most naturally gifted rapper ever and it's barely an argument.",
+      "true": "hot_take",
+      "fine_tuned": "stan",
+      "baseline": "critique"
+    },
+    {
+      "text": "The Alchemist loop here never resolves, it loops on an unresolved chord so you keep waiting for a landing that never comes, that's the tension.",
+      "true": "critique",
+      "fine_tuned": "critique",
+      "baseline": "critique"
+    },
+    {
+      "text": "midnight release and I'm wide awake buzzing this is everything",
+      "true": "stan",
+      "fine_tuned": "stan",
+      "baseline": "critique"
+    },
+    {
+      "text": "Kendrick is the only rapper of his generation that will be remembered in 50 years, everyone else is filler.",
+      "true": "hot_take",
+      "fine_tuned": "hot_take",
+      "baseline": "hot_take"
+    },
+    {
+      "text": "He's got more number one albums than anyone this decade so the GOAT debate is honestly over.",
+      "true": "hot_take",
+      "fine_tuned": "hot_take",
+      "baseline": "hot_take"
+    },
+    {
+      "text": "this is the album I'm gonna show my kids one day mark my words",
+      "true": "stan",
+      "fine_tuned": "stan",
+      "baseline": "critique"
+    },
+    {
+      "text": "okay this is officially my personality for the next six months sorry not sorry",
+      "true": "stan",
+      "fine_tuned": "stan",
+      "baseline": "critique"
+    },
+    {
+      "text": "Joey Bada$$ is a nostalgia act with no original ideas and the cosign carried him.",
+      "true": "hot_take",
+      "fine_tuned": "hot_take",
+      "baseline": "hot_take"
+    },
+    {
+      "text": "Kendrick's m.A.A.d city has two beats stitched together and the seam at the halfway switch is the most replayed moment because the contrast is so stark.",
+      "true": "critique",
+      "fine_tuned": "critique",
+      "baseline": "critique"
+    },
+    {
+      "text": "I genuinely teared up at the closer no album has done that to me in years",
+      "true": "stan",
+      "fine_tuned": "stan",
+      "baseline": "stan"
+    },
+    {
+      "text": "I have chills from start to finish and I refuse to take it off repeat",
+      "true": "stan",
+      "fine_tuned": "stan",
+      "baseline": "stan"
+    },
+    {
+      "text": "Freddie Gibbs is the best pure rapper alive right now and it's not particularly close.",
+      "true": "hot_take",
+      "fine_tuned": "hot_take",
+      "baseline": "hot_take"
+    },
+    {
+      "text": "we waited and he DELIVERED I have never been so happy to be wrong about a delay",
+      "true": "stan",
+      "fine_tuned": "stan",
+      "baseline": "hot_take"
+    },
+    {
+      "text": "Billy Woods structures verses around recurring images rather than a narrative, the same objects keep returning so the meaning accrues instead of progressing.",
+      "true": "critique",
+      "fine_tuned": "stan",
+      "baseline": "critique"
+    },
+    {
+      "text": "Andre's verse is built on enjambment, almost no line ends where the bar ends so the meaning keeps spilling into the next line.",
+      "true": "critique",
+      "fine_tuned": "critique",
+      "baseline": "critique"
+    },
+    {
+      "text": "The verse uses the same rhyme sound for twelve straight bars which should get boring but he keeps changing the syllable count so the cadence stays alive.",
+      "true": "critique",
+      "fine_tuned": "critique",
+      "baseline": "critique"
+    },
+    {
+      "text": "Aesop Rock's vocabulary density means you need the lyrics sheet, but the payoff is the imagery is precise, every odd word is doing real work.",
+      "true": "critique",
+      "fine_tuned": "stan",
+      "baseline": "critique"
+    },
+    {
+      "text": "the cover art alone had me hype and then the music delivered too somehow",
+      "true": "stan",
+      "fine_tuned": "stan",
+      "baseline": "critique"
+    },
+    {
+      "text": "this man understood the assignment and then rewrote the assignment entirely",
+      "true": "stan",
+      "fine_tuned": "stan",
+      "baseline": "critique"
+    },
+    {
+      "text": "The way they layered the background vocals in thirds on the hook is why it feels so full, it's a choir trick on a rap song.",
+      "true": "critique",
+      "fine_tuned": "critique",
+      "baseline": "critique"
+    },
+    {
+      "text": "the way I gasped when the beat switched I woke up my whole apartment",
+      "true": "stan",
+      "fine_tuned": "critique",
+      "baseline": "critique"
+    },
+    {
+      "text": "Kendrick is overrated and the Pulitzer was a political pick, the music doesn't back it.",
+      "true": "hot_take",
+      "fine_tuned": "hot_take",
+      "baseline": "hot_take"
+    },
+    {
+      "text": "Playboi Carti changed the genre more than anyone in the last decade, period.",
+      "true": "hot_take",
+      "fine_tuned": "hot_take",
+      "baseline": "hot_take"
+    },
+    {
+      "text": "The mixing keeps the vocal slightly louder than is fashionable right now, which is why you can actually parse the lyrics, a deliberate anti trend choice.",
+      "true": "critique",
+      "fine_tuned": "critique",
+      "baseline": "critique"
+    },
+    {
+      "text": "the anticipation almost broke me but the payoff was worth every second",
+      "true": "stan",
+      "fine_tuned": "stan",
+      "baseline": "critique"
+    },
+    {
+      "text": "Danny Brown's pitched up delivery on this is a choice, the higher register makes the bleak lyrics sound manic instead of sad, tone and content clash on purpose.",
+      "true": "critique",
+      "fine_tuned": "critique",
+      "baseline": "critique"
+    },
+    {
+      "text": "The 90s were the worst decade for rap production and nostalgia is lying to you.",
+      "true": "hot_take",
+      "fine_tuned": "critique",
+      "baseline": "critique"
+    },
+    {
+      "text": "Black Thought's breath control is the lesson here, that ten minute freestyle has maybe four audible inhales and the cadence never slips.",
+      "true": "critique",
+      "fine_tuned": "critique",
+      "baseline": "critique"
+    },
+    {
+      "text": "him snapping on a Tuesday for no reason we are blessed beyond measure",
+      "true": "stan",
+      "fine_tuned": "stan",
+      "baseline": "critique"
+    }
+  ],
+  "fine_tuned_wrong": [
+    {
+      "text": "Kendrick vs Drake wasn't even close, Drake lost the second the first track dropped.",
+      "true": "hot_take",
+      "pred": "stan",
+      "confidence": 0.68
+    },
+    {
+      "text": "Andre 3000 is the most naturally gifted rapper ever and it's barely an argument.",
+      "true": "hot_take",
+      "pred": "stan",
+      "confidence": 0.65
+    },
+    {
+      "text": "Billy Woods structures verses around recurring images rather than a narrative, the same objects keep returning so the meaning accrues instead of progressing.",
+      "true": "critique",
+      "pred": "stan",
+      "confidence": 0.65
+    },
+    {
+      "text": "Aesop Rock's vocabulary density means you need the lyrics sheet, but the payoff is the imagery is precise, every odd word is doing real work.",
+      "true": "critique",
+      "pred": "stan",
+      "confidence": 0.63
+    },
+    {
+      "text": "the way I gasped when the beat switched I woke up my whole apartment",
+      "true": "stan",
+      "pred": "critique",
+      "confidence": 0.91
+    },
+    {
+      "text": "The 90s were the worst decade for rap production and nostalgia is lying to you.",
+      "true": "hot_take",
+      "pred": "critique",
+      "confidence": 0.6
+    }
+  ],
+  "sample_classifications": [
+    {
+      "text": "Kendrick vs Drake wasn't even close, Drake lost the second the first track dropped.",
+      "true": "hot_take",
+      "pred": "stan",
+      "confidence": 0.68,
+      "correct": false
+    },
+    {
+      "text": "The bridge strips back to just piano and vocal and that vulnerability in the arrangement is why the emotional turn in the lyric actually registers.",
+      "true": "critique",
+      "pred": "critique",
+      "confidence": 0.86,
+      "correct": true
+    },
+    {
+      "text": "DOOM is the most influential underground rapper ever and mainstream heads will never get it.",
+      "true": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.84,
+      "correct": true
+    },
+    {
+      "text": "Future is more influential than Jay-Z and it's not even a debate at this point.",
+      "true": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.85,
+      "correct": true
+    },
+    {
+      "text": "Andre 3000 is the most naturally gifted rapper ever and it's barely an argument.",
+      "true": "hot_take",
+      "pred": "stan",
+      "confidence": 0.65,
+      "correct": false
+    },
+    {
+      "text": "The Alchemist loop here never resolves, it loops on an unresolved chord so you keep waiting for a landing that never comes, that's the tension.",
+      "true": "critique",
+      "pred": "critique",
+      "confidence": 0.61,
+      "correct": true
+    },
+    {
+      "text": "midnight release and I'm wide awake buzzing this is everything",
+      "true": "stan",
+      "pred": "stan",
+      "confidence": 0.68,
+      "correct": true
+    },
+    {
+      "text": "Kendrick is the only rapper of his generation that will be remembered in 50 years, everyone else is filler.",
+      "true": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.85,
+      "correct": true
+    },
+    {
+      "text": "He's got more number one albums than anyone this decade so the GOAT debate is honestly over.",
+      "true": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.84,
+      "correct": true
+    },
+    {
+      "text": "this is the album I'm gonna show my kids one day mark my words",
+      "true": "stan",
+      "pred": "stan",
+      "confidence": 0.68,
+      "correct": true
+    },
+    {
+      "text": "okay this is officially my personality for the next six months sorry not sorry",
+      "true": "stan",
+      "pred": "stan",
+      "confidence": 0.63,
+      "correct": true
+    },
+    {
+      "text": "Joey Bada$$ is a nostalgia act with no original ideas and the cosign carried him.",
+      "true": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.87,
+      "correct": true
+    },
+    {
+      "text": "Kendrick's m.A.A.d city has two beats stitched together and the seam at the halfway switch is the most replayed moment because the contrast is so stark.",
+      "true": "critique",
+      "pred": "critique",
+      "confidence": 0.91,
+      "correct": true
+    },
+    {
+      "text": "I genuinely teared up at the closer no album has done that to me in years",
+      "true": "stan",
+      "pred": "stan",
+      "confidence": 0.91,
+      "correct": true
+    },
+    {
+      "text": "I have chills from start to finish and I refuse to take it off repeat",
+      "true": "stan",
+      "pred": "stan",
+      "confidence": 0.94,
+      "correct": true
+    },
+    {
+      "text": "Freddie Gibbs is the best pure rapper alive right now and it's not particularly close.",
+      "true": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.85,
+      "correct": true
+    },
+    {
+      "text": "we waited and he DELIVERED I have never been so happy to be wrong about a delay",
+      "true": "stan",
+      "pred": "stan",
+      "confidence": 0.97,
+      "correct": true
+    },
+    {
+      "text": "Billy Woods structures verses around recurring images rather than a narrative, the same objects keep returning so the meaning accrues instead of progressing.",
+      "true": "critique",
+      "pred": "stan",
+      "confidence": 0.65,
+      "correct": false
+    },
+    {
+      "text": "Andre's verse is built on enjambment, almost no line ends where the bar ends so the meaning keeps spilling into the next line.",
+      "true": "critique",
+      "pred": "critique",
+      "confidence": 0.86,
+      "correct": true
+    },
+    {
+      "text": "The verse uses the same rhyme sound for twelve straight bars which should get boring but he keeps changing the syllable count so the cadence stays alive.",
+      "true": "critique",
+      "pred": "critique",
+      "confidence": 0.92,
+      "correct": true
+    },
+    {
+      "text": "Aesop Rock's vocabulary density means you need the lyrics sheet, but the payoff is the imagery is precise, every odd word is doing real work.",
+      "true": "critique",
+      "pred": "stan",
+      "confidence": 0.63,
+      "correct": false
+    },
+    {
+      "text": "the cover art alone had me hype and then the music delivered too somehow",
+      "true": "stan",
+      "pred": "stan",
+      "confidence": 0.64,
+      "correct": true
+    },
+    {
+      "text": "this man understood the assignment and then rewrote the assignment entirely",
+      "true": "stan",
+      "pred": "stan",
+      "confidence": 0.67,
+      "correct": true
+    },
+    {
+      "text": "The way they layered the background vocals in thirds on the hook is why it feels so full, it's a choir trick on a rap song.",
+      "true": "critique",
+      "pred": "critique",
+      "confidence": 0.9,
+      "correct": true
+    },
+    {
+      "text": "the way I gasped when the beat switched I woke up my whole apartment",
+      "true": "stan",
+      "pred": "critique",
+      "confidence": 0.91,
+      "correct": false
+    },
+    {
+      "text": "Kendrick is overrated and the Pulitzer was a political pick, the music doesn't back it.",
+      "true": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.86,
+      "correct": true
+    },
+    {
+      "text": "Playboi Carti changed the genre more than anyone in the last decade, period.",
+      "true": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.89,
+      "correct": true
+    },
+    {
+      "text": "The mixing keeps the vocal slightly louder than is fashionable right now, which is why you can actually parse the lyrics, a deliberate anti trend choice.",
+      "true": "critique",
+      "pred": "critique",
+      "confidence": 0.92,
+      "correct": true
+    },
+    {
+      "text": "the anticipation almost broke me but the payoff was worth every second",
+      "true": "stan",
+      "pred": "stan",
+      "confidence": 0.62,
+      "correct": true
+    },
+    {
+      "text": "Danny Brown's pitched up delivery on this is a choice, the higher register makes the bleak lyrics sound manic instead of sad, tone and content clash on purpose.",
+      "true": "critique",
+      "pred": "critique",
+      "confidence": 0.92,
+      "correct": true
+    },
+    {
+      "text": "The 90s were the worst decade for rap production and nostalgia is lying to you.",
+      "true": "hot_take",
+      "pred": "critique",
+      "confidence": 0.6,
+      "correct": false
+    },
+    {
+      "text": "Black Thought's breath control is the lesson here, that ten minute freestyle has maybe four audible inhales and the cadence never slips.",
+      "true": "critique",
+      "pred": "critique",
+      "confidence": 0.61,
+      "correct": true
+    },
+    {
+      "text": "him snapping on a Tuesday for no reason we are blessed beyond measure",
+      "true": "stan",
+      "pred": "stan",
+      "confidence": 0.68,
+      "correct": true
+    }
+  ]
+}
